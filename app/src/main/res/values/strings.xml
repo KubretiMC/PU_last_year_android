@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EShop</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="buy">buy</string>
+    <string name="add_to_card">add to card</string>
+    <string name="remove_from_card">remove from card</string>
+    <string name="add_new_product">Add new product</string>
+    <string name="edit_product">Edit product</string>
+    <string name="delete_product">Delete product</string>
+    <string name="add">Add</string>
+    <string name="cost">Cost</string>
+    <string name="name">Name</string>
+    <string name="edit">edit</string>
+    <string name="address">address</string>
+</resources>

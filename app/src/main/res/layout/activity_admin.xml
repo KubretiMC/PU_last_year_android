@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+    <TableLayout android:layout_height="match_parent" android:layout_width="match_parent">
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Welcome"
+                android:id="@+id/usernameTextView"
+                />
+        </TableRow>
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:text="Products"
+                android:id="@+id/productsTextView"
+                tools:ignore="MissingConstraints" />
+        </TableRow>
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <ListView
+                android:layout_height="250dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/simpleListView"
+                android:dividerHeight="1dp"
+                android:divider="@color/colorPrimaryDark"
+                android:choiceMode="singleChoice"
+                android:listSelector="#666666"
+                tools:ignore="MissingConstraints" />
+        </TableRow>
+
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <Button
+                android:id="@+id/AddButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_product"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/simpleListView" />
+        </TableRow>
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <Button
+                android:id="@+id/EditButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_product"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AddButton" />
+        </TableRow>
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <Button
+                android:id="@+id/DeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_product"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AddButton" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
