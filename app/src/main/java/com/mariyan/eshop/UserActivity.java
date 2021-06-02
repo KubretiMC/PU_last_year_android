@@ -216,5 +216,5 @@ public class UserActivity extends AppCompatActivity {
         }
         db.close();
     }
-    
+
 }
